@@ -5,11 +5,12 @@ error() {
   exit $1
 }
 
-if [ "$1" = "" ]; then
+cert_name="$1"
+if [ "$cert_name" = "" ]; then
   error 1 "Usage: $0 CONFIG_NAME"
 fi
 
-config="config/$1.sh"
+config="config/$cert_name.sh"
 if [ ! -f "$config" ]; then
   error 1 "Configuration file $config not found."
 fi
