@@ -1,6 +1,6 @@
 # certbot コマンドで証明書を発行
 
-- ACME v1 プロトコルを使う
+- ACME v2 プロトコルを使う
 - webroot で認証
 - certonly（Web サーバーの再起動などはしない）
 - フックの設定はしない

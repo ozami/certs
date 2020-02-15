@@ -11,7 +11,7 @@ shift
 if [ $staging = yes ]; then
   server=https://acme-staging.api.letsencrypt.org/directory
 else
-  server=https://acme-v01.api.letsencrypt.org/directory
+  server=https://acme-v02.api.letsencrypt.org/directory
 fi
 
 certbot certonly \
